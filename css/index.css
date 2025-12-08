@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 20vh 20vw;
+    color: #e0e0ff;
+}
+
+.logo {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1rem;
+}
+
+.logo img {
+    height: auto;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.button-nav-index {
+    width: 30rem;
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #e0e0ff;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-button);
+    background-image: linear-gradient(to bottom, var(--clr-bg-button-light), var(--clr-bg-button-dark));
+    transition: 0.2s;
+}
+
+.button-nav-index:hover {
+    background-image: linear-gradient(to bottom, var(--clr-bg-button-light-hover), var(--clr-bg-button-dark-hover));
+    color: white;
+    box-shadow: 0 0 1rem rgba(60, 60, 100, 0.4);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 2s ease forwards;
+}
+
+.fade-in-up-2 {
+    animation-delay: 3s;
+    animation: fadeInUp 4s ease forwards;
+}

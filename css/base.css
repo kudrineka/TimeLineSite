@@ -1,0 +1,41 @@
+:root {
+    --clr-bg-body-light: #0a0a0f;
+    --clr-bg-body-dark: #2c2c3e;
+    --clr-bg-button-light: #3a4d8c;
+    --clr-bg-button-dark: #2a3a6e;
+    --clr-bg-button-light-hover: #4a5da8;
+    --clr-bg-button-dark-hover: #3a4a90;
+    --clr-bg-footer: #11111e;
+
+    --border-radius-button: 0.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--clr-bg-body-light), var(--clr-bg-body-dark));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--clr-bg-footer);
+    color: #b0b0cc;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+}
+
+footer p {
+    padding: 0.2rem 0;
+}
