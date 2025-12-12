@@ -100,8 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const slider = document.getElementById('line-size');
     const fragments = document.querySelectorAll('.fragment');
     root.classList.remove('scale-0', 'scale-1', 'scale-2', 'scale-3');
-    root.classList.add('scale-0');
-    slider.value = 0;
+    root.classList.add('scale-3');
+    slider.value = 3;
     setTimeout(drawAll, 100);
 
     slider.addEventListener('input', () => {
@@ -123,7 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let scrollLeft;
 
     timeline.addEventListener('mousedown', (e) => {
-        // запрещаем drag на заголовках, абзацах, списках и горизонтальных линиях
         const forbiddenTags = ['H2', 'P', 'UL', 'HR'];
         if (forbiddenTags.includes(e.target.tagName)) return;
 
@@ -158,4 +157,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
-

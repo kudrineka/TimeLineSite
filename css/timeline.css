@@ -13,18 +13,19 @@ html, body {
     height: 100%;
 }
 
+main {
+    flex: 1;
+}
+
 body {
     display: flex;
     flex-direction: column;
     color: #e0e0ff;
 }
 
-main {
-    flex: 1;
-}
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
     color: #ffffff;
 }
@@ -34,8 +35,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 7rem;
+    height: 9rem;
     gap: 0.75rem;
+    padding: 1rem;
     background-image: linear-gradient(to bottom, var(--clr-bg-header-light), var(--clr-bg-header-dark));
 }
 
@@ -134,12 +136,17 @@ header {
     white-space: nowrap;
     position: relative;
     background-color: #ffffff;
-    min-height: 35rem;
+    min-height: 40rem;
     display: flex;
     flex-direction: row;
     color: black;
     justify-content: space-around;
     cursor: grab;
+    user-select: none;
+}
+
+.timelime * {
+    user-select: none;
 }
 
 .timeline:active {
@@ -172,12 +179,8 @@ header {
 .timeline h2 {
     font-size: 2rem;
     color: #2a2a40;
-    cursor: default;
 }
 
-.timeline p {
-    cursor: default;
-}
 
 .line {
     position: absolute;
@@ -360,8 +363,6 @@ hr {
 
 .part ul {
     color: #2a2a40;
-    cursor: default;
-    user-select: all;
 }
 
 .part p {
